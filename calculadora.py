@@ -54,3 +54,27 @@ print('o segundo numero elevado ao cubo é:' + pot3_Y(Y))
 print('a raiz quadrada do primeiro numero é:' + raiz_X(X))
 print('a raiz quadrada do segundo numero é:' + raiz_Y(Y))
 print('a porcentagem dos numeros é:' + porc(X, Y))
+
+##################### CALCULO DEFINIDO ######################################
+
+n1 = int(input("digite um número:"))
+n2 = int(input("digite um número:"))
+operacao = input("digite o calculo que deseja:")
+
+if operacao == 'somar':
+ print(f'resultado:{n1 + n2}')
+elif operacao == 'dividir':
+ print(f'resultado: {n1 // n2}')
+elif operacao == 'multiplicar':
+ print(f'resultado:{n1 * n2}')
+elif operacao == 'subtrair':
+ print(f'resultado:{n1 - n2}')
+elif operacao == 'exponencial':
+ print(f'resultado:{n1 ** n2}')
+elif operacao == 'porcentagem':
+ print(f'resultado:{n2 * n1/100}')
+elif operacao == 'média':
+ print(f'resultado:{n1 + n2 /2}')
+
+else:
+ print("tipo de calculo ainda não disponivel")
